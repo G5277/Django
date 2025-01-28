@@ -6,3 +6,7 @@ from django.http import HttpResponse
 
 def say_hello(request):
     return HttpResponse('Hello Everyone')
+
+
+def say_bye(request):
+    return render(request, 'bye.html', {'id': 'Gazal'})
